@@ -1,15 +1,15 @@
 [package]
-name = "uart"
+name = "microbit-compass"
 version = "0.1.0"
-authors = ["Henrik Böving <hargonix@gmail.com>"]
+authors = ["Evan Helbig <evan@evanhelbig.com>"]
 edition = "2018"
 
 [dependencies]
-cortex-m = "0.7.3"
-cortex-m-rt = "0.7.0"
-rtt-target = { version = "0.3.1", features = ["cortex-m"] }
+cortex-m = "0.7.7"
+cortex-m-rt = "0.7.3"
+rtt-target = { version = "0.3", features = ["cortex-m"] }
 panic-rtt-target = { version = "0.1.2", features = ["cortex-m"] }
-nb = "1.0.0"
-heapless = "0.7.10"
-embedded-hal = "0.2.6"
-microbit-v2 = "0.13"
+lsm303agr = "0.2.2"
+libm = "0.2.7"
+embedded-hal = "0.2.7"
+microbit-v2 = "0.13.0"
